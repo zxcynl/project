@@ -1,0 +1,96 @@
+.w{
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;
+}
+.nav{
+	height: 485px;
+	background-color: #7e00ff;
+	border: none;
+}
+.login{
+	height: 485px;
+	background: url(../upload/loginbg.png) no-repeat;
+}
+.loginform{
+	position: absolute;
+	top: 60px;
+	left: 710px;
+	width: 380px;
+	height: 360px;
+	background-color: #ffffff;
+}
+.loginform .hd{
+	height: 62px;
+}
+.hd ul{
+	position: relative;
+}
+.hd ul li{
+	float: left;
+	width: 190px;
+	font-size: 18px;
+	line-height: 62px;
+	text-align: center;
+}
+.hd ul li:last-child{
+	position: absolute;
+	top: 20px;
+	left: 190px;
+	width: 1px;
+	height: 19px;
+	background-color: #ededed;
+}
+
+.bd{
+	margin-left: 37px;
+}
+.bd ul h4{
+	background-color: #fffdee;
+	height: 26px;
+	width: 302px;
+	font-weight: 300;
+	line-height: 26px;
+	color: #666666;
+}
+.bd li{
+	width: 302px;
+	height: 36px;
+	border: 1px solid #666666;
+	margin-top: 10px;
+}
+.bd li span{
+	float: left;
+	display: block;
+	width: 37px;
+	height: 100%;
+	background-color: #cfcdcd;
+	padding: 5px 0px 0px 10px;
+}
+
+.bd input{
+	width: 260px;
+	height: 100%;
+}
+.check{
+	float: left;
+}
+.check input{
+	margin-top: 5px;
+	width: 15px;
+	height: 15px;
+}
+.forget{
+	float: right;
+	line-height: 26px;
+}
+button{
+	width:100%;
+	height: 100%;
+	background-color: red;
+	color: white;
+}
+.bd ul li:last-child a{
+	float: right;
+	color: #1474af;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人注册</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/register.css">
+	</head>
+	<body>
+		<div class="w">
+			<header class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a> 
+				</div>
+			</header>
+			<div class="registerarea">
+					<h3>注册新用户
+						<div class="login">我有账号，去<a href="login.html" >登陆</a></div>
+					</h3>
+					<div class="reg_form">
+						<form action="" method="">
+							<ul>
+								<li><label for="">手机号: </label><input	 type="text" class="inp"> 
+									<span class="mess"><i class="mess_icon"></i>请输入手机号</span></li>
+							
+								<li><label for="">短信验证码: </label><input type="text" class="inp"> 
+									<span class="mess"><i class="mess_icon"></i>测试中，默认1234!</span></li>
+							
+								<li><label for="">登陆密码: </label><input type="password" class="inp"> 
+									<span class="mess"><i class="mess_icon"></i>密码不少于6位</span></li>
+								
+								<li class="safe">安全程度 <em class="ruo">弱</em><em class="zhong">中</em><em class="qiang">强</em></li>
+								
+								<li><label for="">确认密码: </label><input type="password" class="inp"> 
+									<span class="mess"><i class="mess_icon"></i>请重复密码</span></li>
+								
+								<li class="agree"><input type="checkbox"> 同意协议并注册 <a href="#">《知晓用户协议》</a></li>
+								<li><input type="submit" value="完成注册" class="btn"></li>
+							</ul>
+						</form>
+					</div>
+					<script>
+						// 获取事件源
+						var inp = document.querySelectorAll('.inp'); // 获取用户输入
+						var i = document.querySelectorAll('i'); // 获取图片所在
+						var span = document.querySelectorAll('span');
+						var em = document.querySelectorAll('em');
+						// 事件类型 事件处理程序
+						inp[0].onblur = function (){
+								if(inp[0].value.length != 11){
+									span[0].className = 'error';
+									span[0].innerHTML = '<i class="error_icon"></i>手机号长度为11位，请重新输入!'
+							}else if (inp[0].value.length == 11){	
+									i[0].className = 'success_icon';
+									span[0].className = 'success';
+									span[0].innerHTML = '<i class="success_icon"></i>手机号格式正确!'
+							}
+						}
+						inp[0].onfocus = function(){
+							inp[0].value = '';
+						}
+						inp[1].onblur = function (){
+								if(inp[1].value != '1234'){
+									span[1].className = 'error';
+									span[1].innerHTML = '<i class="error_icon"></i>验证码错误，请重新输入!'
+							}else if (inp[1].value == '1234'){	
+									i[1].className = 'success_icon';
+									span[1].className = 'success';
+									span[1].innerHTML = '<i class="success_icon"></i>验证码正确!'
+							}
+						}
+						inp[1].onfocus = function(){
+							inp[1].value = '';
+						}
+						inp[2].onblur = function (){
+								if(inp[2].value.length < 6){
+									span[2].className = 'error';
+									span[2].innerHTML = '<i class="error_icon"></i>密码少于6位!'
+							}else if (inp[2].value.length >= 6 ){	
+									i[2].className = 'success_icon';
+									span[2].className = 'success';
+									span[2].innerHTML = '<i class="success_icon"></i>密码格式正确!'
+							}
+						}
+						inp[2].onfocus = function(){
+							inp[2].value = '';
+						}
+						inp[2].onblur = function (){
+							if(inp[2].value.length >= 6 && inp[2].value.length <= 9){
+								em[0].style.display = 'inline-block';
+								em[1].style.display = 'none';
+								em[2].style.display = 'none';
+							} else if(inp[2].value.length >= 10 && inp[2].value.length <= 14){
+								em[0].style.display = 'none';
+								em[1].style.display = 'inline-block';
+								em[2].style.display = 'none';
+							} else if(inp[2].value.length >= 15){
+								em[0].style.display = 'none';
+								em[1].style.display = 'none';
+								em[2].style.display = 'inline-block';
+							} 
+						}
+						
+						inp[3].onblur = function (){
+								if(inp[3].value != inp[2].value){
+									span[3].className = 'error';
+									span[3].innerHTML = '<i class="error_icon"></i>密码不同，请重新输入!'
+							}else if (inp[3].value == inp[2].value){	
+									i[3].className = 'success_icon';
+									span[3].className = 'success';
+									span[3].innerHTML = '<i class="success_icon"></i>重复密码正确!'
+							}
+						}
+						inp[3].onfocus = function(){
+							inp[3].value = '';
+						} 
+					</script>
+			</div>
+			<footer class="footer">
+				<div class="mod_copyright">
+					<div class="links">
+						关于我们 | 联系客服 | 商家入驻 | 营销中心 | 联系我们 | 手
+						机品优购 | 友情链接 |销售联盟 | 品优购社区 | 品优购公益
+						English site | Contact U
+					</div>
+					<div class="copyright">
+						地址:北京市昌平区建材城西路金燕龙办公楼一层 邮编: 100096 电话:400-618-4000 传真: 010-8293510 邮箱: zhanghj+itcast.cn
+						<br/>京ICP备08901421号京公网安备110180077@2
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

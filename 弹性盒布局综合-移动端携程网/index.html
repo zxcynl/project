@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>携程在手，说走就走</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<!--
+	准备工作
+	1.技术选型：单独制作移动端页面，采取flex技术
+	2.搭建项目结构
+	1）建目录
+	2）增加视口
+	3)引入初始化样式
+	下载移动端通用样式，并引用在页面http://necolas.github.io/normalize.css/
+	引入自己的样式，主要设置了body样式，参考了目前携程移动端的样式
+	
+	分模块制作
+	1制作搜索模块
+	1.1设置搜索模块的整体
+	固定定位，高度44p，水平居中
+	1.2设置搜索的内容和样式
+	内容分左右 左边自适应flex: 1;，右边固定大小宽高44*44
+	-->
+	<body>
+		<!--1搜索模块-->
+		<div class="search-index">
+			<div class="search">搜索：目的地/酒店/景点/航班号</div>
+			<a href="#" class="user">我的</a>
+		</div>
+		<!--2焦点图（轮播图）模块-->
+		<div class="focus">
+			<img src="upload/focus.jpg"/>
+		</div>
+		<!--主导航栏设置-->
+			<nav>
+				<div class="nav-common">
+					<div class="nav-items first"><a href="">酒店</a></div>
+					<div class="nav-items">
+						<a href="#">海外酒店</a>
+						<a href="#">特价酒店</a>
+					</div>
+					<div class="nav-items">
+						<a href="#">团购</a>
+						<a href="#">民宿.客栈</a>
+					</div>
+				</div>
+				
+				<div class="nav-common">
+					<div class="nav-items second"><a href="">机票</a></div>
+					<div class="nav-items">
+						<a href="#">火车票</a>
+						<a href="#">特价机票</a>
+					</div>
+					<div class="nav-items">
+						<a href="#">汽车票.船票</a>
+						<a href="#">专车.租车</a>
+					</div>
+				</div>
+				<div class="nav-common">
+						<div class="nav-items third"><a href="">旅游</a></div>
+					<div class="nav-items">
+						<a href="#">门票</a>
+						<a href="#">目的地攻略</a>
+					</div>
+					<div class="nav-items">
+						<a href="#">邮轮旅行</a>
+						<a href="#">定制旅行</a>
+					</div>
+				</div>
+			</nav>
+			<!--侧导航栏-->
+			<ul class="subnav-entry">
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-1"></span>
+						<span class="zi">WiFi电话卡</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-2"></span>
+						<span class="zi">保险签证</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-3"></span>
+						<span class="zi">外币兑换</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-4"></span>
+						<span class="zi">购物</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-5"></span>
+						<span class="zi">当地向导</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-6"></span>
+						<span class="zi">自由行</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-7"></span>
+						<span class="zi">境外玩乐</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-8"></span>
+						<span class="zi">礼品卡</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-9"></span>
+						<span class="zi">信用卡</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="subnav-entry-icon-10"></span>
+						<span class="zi">更多</span>
+					</a>
+				</li>
+			</ul>
+		<!--热门活动-->
+		<div class="sales-box">
+			<div class="sales-hd">
+				<h2></h2>
+				<a href="" class="more">获取更多福利</a>
+			</div>
+			<div class="sales-bd">
+				<div class="row">
+					<a href="#"><img src="upload/pic1.jpg"/></a>
+					<a href="#"><img src="upload/pic2.jpg"/></a>
+				</div>
+				<div class="row">
+					<a href=""><img src="upload/pic3.jpg"/></a>
+					<a href=""><img src="upload/pic4.jpg"/></a>
+				</div>
+				<div class="row">
+					<a href=""><img src="upload/pic5.jpg"/></a>
+					<a href=""><img src="upload/pic6.jpg"/></a>
+				</div>
+			</div>
+		</div>
+		<!--底部电话预定-->
+		<div class="bottom">
+			<ul>
+				<li>
+					<a href="#" title="电话预定">
+						<span class="TEL"></span>
+						<span>电话预定</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="APP" title="下载客户端"></span>
+						<span>下载客户端</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="wd" title="我的"></span>
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="dddd">
+			<ul>
+				<li>
+				<a href="#">网站地图 |</a> 
+				<a href="#">Language |</a>
+				<a href="#">电脑版</a> 
+				</li>
+				
+			</ul>
+			<p>©2018携程旅行 | 沪ICP备08023580号</p>
+		</div>
+	</body>
+</html>
