@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+	color: #6c6c6c;
+
+}
+.w{
+	max-width: 1200px;
+	min-width: 560px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: #6C6C6C;
+}
+/*快捷导航栏*/
+.shortcut>.w{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;/*row*/
+}
+.shortcut>.w{
+	height: 32px;
+	background-color:#f7f7f7 ;
+}
+.left-item ul{
+	display: flex;
+	width: 80px;
+	justify-content: space-between;
+}
+.left-item ul li{
+	flex: 1;
+	line-height: 32px;
+}
+
+.left-item,
+.right-item{
+	flex: 1;
+}
+.left-item ul,
+.right-item ul{
+	display: flex;
+}
+.right-item li{
+	flex: 1;
+	position: relative;
+	line-height: 32px;
+	text-align: center;
+}
+.right-item .downgroup{
+	display: none;
+	flex-flow: column; /*将主轴方向换为垂直*/
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	display: none;
+	border: 1px solid rgb(211,211,211);
+	border-top: none;
+}
+.right-item>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.right-item>ul>li>a:hover{
+	background-color: white;
+	transform: translate(1px,1px);
+}
+.downgroup li{
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	background-color: white;
+}
+.downgroup li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: 5px;
+}
+.downgroup li a:hover{
+	background-color: rgb(245,245,245);
+}
+/*header设置*/
+.header>.w{
+	height: 100px;
+	display: flex;
+	border-bottom: 5px solid #d3d3d3;
+}
+.header>.w{
+}
+.logo{
+	flex: 21%;	/*设置logo部分占比*/
+}
+.header img{
+	display: block;
+	margin: 20px 0px 20px 0px;	/*设置logo图片居中*/
+}
+.hd-items{
+	flex: 79%;
+}
+.hd-items>ul{
+	display: flex;
+	justify-content: space-around;
+}
+.hd-items li{
+	flex: 1;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 14px;
+}
+.hd-items li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.hd-items li a:hover{
+	border-bottom: 5px solid #ee950d;
+}
+
+/*焦点图设置*/
+nav>.w{
+	height: 520px;
+	margin-bottom: 30px;
+}
+nav img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*时间表设置*/
+.times{
+	display: flex;
+	justify-content: space-around;
+	height: 83px;
+	margin-bottom: 30px;
+}
+.times li{
+	flex: 1;
+	text-align: center;
+	height: 80px;
+	padding-top: 20px;
+	border: 1px solid #ffb982;
+}
+.time a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.times li:hover{
+	border-bottom: none;
+}
+/*车次时刻表*/
+table{
+	display: none;
+	width:100%;
+}
+table:nth-child(1){
+	display: block;
+}
+tr{
+	display: inline-block;
+	width: 100%;
+	height: 90px;
+	padding-top: 35px;
+}
+td{
+	display: inline-block;
+	width: 19%;
+	height: 100%;
+}
+tr td:nth-child(1){		/*设置出发时间那一列居中*/
+	text-align: center;
+}
+thead>tr{
+	font-weight: 700;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+	padding-top:0px ;
+}
+tbody button{
+	width: 100px;
+	height: 30px;
+	background: rgb(225,118,0);
+	border: none;
+	color: white;
+}
+tbody tr:nth-child(odd){
+	background-color: #ffe8c8;
+}
+
+tbody tr:nth-child(even){
+	background-color: #fff5e6;
+}
+.strat{
+	color: white;
+	background: rgb(255,118,0);
+}
+.stop{
+	color: white;
+	background: rgb(0,102,255);
+}
+.style_color{
+	color: rgb(255,112,0);
+	font-weight: 700;
+	font-size: 14px;
+}
+
+/*底部*/
+footer{
+	background: url(../images/footer_bg.png) repeat;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color: rgb(85,136,133);
+	margin-top: 50px;
+}
+/*留言区*/	
+
+.ideas{
+	position: fixed;
+	top: 50%;
+	right:0;
+	width:180px;
+	transform: translateY(-200px);
+}
+.write textarea{
+	margin-top: 30px;
+	width: 60%;
+	height: 100px;
+	resize: none;
+	border: 1px solid pink;
+	border-radius: 10px;
+	outline: none;
+}
+textarea:focus{
+	border-color:peru;
+}
+.write button{
+	width: 30px;
+	height: 20px;
+	background-color: peru;
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+	border: 1px solid darkcyan;
+}
+
+.ideas>ul>li{
+	height: 30px;
+	width: 100px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: black;
+	background-color:greenyellow ;
+	border-radius: 5px;
+	line-height: 30px;
+	margin-top: 3px;
+}
+.ideas a{
+	display:inline-block;
+	float: right;
+}
