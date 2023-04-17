@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size:16px ;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.w{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*logo区域设置*/
+#logo{
+	background-color: #fff;
+	height: 80px;
+}
+.logo{
+	float: left;
+	margin: 25px 0px 0px 0;
+}
+.service{
+	float: right;
+	margin: 25px 0px 0px 0;
+	
+}
+/*头部导航*/
+#nav{
+	background-color: #0373b9;
+	height: 35px;
+	width: 100%;
+}
+.nav-items{
+	width: 100%;
+}
+.nav-items li{
+	float: left;
+	line-height: 35px;
+	width: 110px;
+	text-align: center;
+}
+.nav-items li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+.nav-items li a:hover{
+	background-color: #25abff;
+}
+/*焦点图*/
+#focus{
+	position: relative;
+	width: 1423px;
+
+margin: 0 auto;
+}
+#focus img{
+	width: 100%;
+	height: 580px;
+	display: none;
+}
+#focus img:first-child{
+	display: block;
+}
+#button{
+	position: absolute;
+	width: 200px;
+	top: 505px;
+	left: 610px;
+}
+#button li{
+	float: left;
+	width: 40px;
+	height: 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+#button li:first-child{
+	background-color: deepskyblue;
+	
+}
+/*英语网简介*/
+#main{
+	height: 335px;
+}
+.main_hd{
+	font-size:20px ;
+	font-weight: 400;
+	height: 105px;
+	color: #585858;
+	line-height: 105px;
+	border-bottom:5px solid #ececec;
+}
+.mian_know{
+	height: 215px;
+}
+/*简介部分左侧logo*/
+.know_left{
+	float: left;
+	width: 170px;
+}
+.know_left img{
+	margin-top: 33px;
+}
+/*简介部分右侧文字*/
+.know_right{
+	float: left;
+}
+.know_right .right_hd{
+	height: 70px;
+	line-height: 70px;
+	color: #fea901;
+	font-size: 16px;
+	font-weight: 500;
+}
+.know_right .right_bd{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6b6862;
+	line-height: 20px;
+}
+/*环境展示*/
+.w{
+	overflow: hidden;
+}
+.evn-show{
+	width: 100%;
+}
+.show-bd ul{
+	width: 2000px;
+}
+.show-bd ul li{
+	float: left;
+	margin-right:19px;
+}
+/*英语课程头部*/
+.course-hd{
+	height: 120px;
+	line-height: 120PX;
+	border-bottom: 5px solid #ececec;
+	margin-bottom: 10px;
+}
+.course-bd{
+	height: 380px;
+}
+.course-bd ul{
+	position: relative;
+}
+/*英语课程部分动图*/
+.left{
+	float: left;
+	width: 450px;
+}
+.left img{
+	display: none;
+}
+.left img:nth-child(1){
+	display: block;
+}
+/*中间部分的按钮*/
+.center{
+	float: left;
+	width: 190px;
+	margin-right: 15px;
+	height: 380px;
+	
+}
+.center li img{
+	display: block;
+	border-bottom: 1px solid white;
+}
+.center li img:first-child{
+	display: none;
+}
+/*右侧注册区域*/
+.right{
+	float: left;
+	width: 325px;
+	height: 380px;
+}
+.course .right-bd div{
+	height: 26px;
+	width: 325px;
+	margin-top: 30px;
+}
+.right-bd div span{
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+.right-bd div input{
+	outline: none;
+	width: 210px;
+	height: 25px;
+}
+.right-bd .sumbit_btn{
+	margin-left: 60px;
+}
+/*底部样式*/
+footer{
+	margin-top: 20px;
+	height: 50px;
+	background-color: #00BFFF;
+	background-color: #0373B9;
+}
+footer div{
+	line-height: 50px;
+	text-align: center;
+	color:white;
+	font-size: 12px;
+}
